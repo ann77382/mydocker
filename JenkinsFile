@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage('1. Checkout'){
+            steps{
+                git url:'https://gitlab.siescoms.in/mca25005/dockernew.git' ,branch:'main'
+            }
+        }
+        stage('2. Build Image'){
+            steps{
+
+            }
+        }
+    }
+}
